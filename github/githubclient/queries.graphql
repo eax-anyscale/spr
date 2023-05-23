@@ -116,18 +116,6 @@ mutation MergePullRequest(
 	}
 }
 
-mutation AutoMergePullRequest(
-	$input: EnablePullRequestAutoMergeInput!
-) {
-	enablePullRequestAutoMerge(
-		input: $input
-	) {
-		pullRequest {
-			number
-		}
-	}
-}
-
 mutation ClosePullRequest(
 	$input: ClosePullRequestInput!
 ) {
